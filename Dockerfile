@@ -1,4 +1,4 @@
 FROM          dokken/centos-8
-RUN echo "success" > /dummy.txt
+ENTRYPOINT [ "bash", "run.sh" ]
 
 
