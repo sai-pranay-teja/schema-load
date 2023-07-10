@@ -8,7 +8,7 @@ case $1 in
     --host $(aws ssm get-parameter --name ${env}.docdb.endpoint --with-decryption | jq '.Parameter.Value' | sed -e 's/"//g'):27017 \
     --sslCAFile /app/rds-combined-ca-bundle.pem \
     --username $(aws ssm get-parameter --name ${env}.docdb.user --with-decryption | jq '.Parameter.Value' | sed -e 's/"//g') \
-     --password $(aws ssm get-parameter --name ${env}.docdb.pass --with-decryption | jq '.Parameter.Value' | sed -e 's/"//g') \
+    --password $(aws ssm get-parameter --name ${env}.docdb.pass --with-decryption | jq '.Parameter.Value' | sed -e 's/"//g') \
       </app/schema/${2}.js
     ;;
   mysql)
