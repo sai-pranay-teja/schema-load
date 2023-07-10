@@ -3,7 +3,7 @@ cd /app
 
 case $1 in
   mongo)
-    curl -L https://s3.amazonaws.com/rds-downloads/rds-combined-ca-bundle.pem -o /app/rds-combined-ca-bundle.pem
+    curl -L curl -s -L https://truststore.pki.rds.amazonaws.com/global/global-bundle.pem -o /app/rds-combined-ca-bundle.pem
     mongo --ssl \
     --host $(aws ssm get-parameter --name ${env}.docdb.endpoint --with-decryption | jq '.Parameter.Value' | sed -e 's/"//g'):27017 \
     --sslCAFile /app/rds-combined-ca-bundle.pem \
