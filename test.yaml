@@ -11,3 +11,6 @@ spec:
       image: 581798224530.dkr.ecr.us-east-1.amazonaws.com/schema-load:1.0.1
       command: [ "tail", "-f","/dev/null" ]
       args: [ "mongo", "catalogue" ]
+      env:
+      - name: env
+        value: dev
