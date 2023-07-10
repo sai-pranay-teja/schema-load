@@ -9,9 +9,8 @@ spec:
       command: [ "/bin/bash", "-c", "--" ]
       args: [ "while true; do sleep 30; done;" ]
       volumeMounts:
-      - name: dummy
-        mountPath: /dummy
-
+      - mountPath: /dummy
+        name: dummy
   volumes:
   - name: dummy
     emptyDir:
