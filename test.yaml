@@ -9,6 +9,7 @@ spec:
       volumeMounts:
       - name: dummy
         mountPath: /dummy
+      args: [ "while true; do sleep 30; done;" ]
   volumes:
   - name: dummy
     emptyDir:
