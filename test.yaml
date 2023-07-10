@@ -2,10 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: schema-load
-  labels:
-    component: catalogue
 spec:
   containers:
     - name: schema-load
       image: test:2
-      args: [ "mongo", "catalogue" ]
