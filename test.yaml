@@ -7,9 +7,9 @@ spec:
     - name: schema-load
       image: pranayroot/test:3
       volumeMounts:
-        - name: dummy
-          mountPath: /dummy
+      - name: dummy
+        mountPath: /dummy
   volumes:
-    - name: dummy
-      emptyDir:
-        sizeLimit: 500Mi
+  - name: dummy
+    emptyDir:
+    sizeLimit: 500Mi
