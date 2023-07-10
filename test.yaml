@@ -6,10 +6,12 @@ spec:
   containers:
     - name: schema-load
       image: pranayroot/test:4
+      command: [ "/bin/bash", "-c", "--" ]
+      args: [ "while true; do sleep 30; done;" ]
       volumeMounts:
       - name: dummy
         mountPath: /dummy
-      args: [ "while true; do sleep 30; done;" ]
+
   volumes:
   - name: dummy
     emptyDir:
