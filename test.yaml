@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
     - name: schema-load
-      image: pranayroot/test:4
+      image: pranayroot/test:5
       command: [ "/bin/bash", "-c", "--" ]
       args: [ "while true; do sleep 30; done;" ]
       volumeMounts:
