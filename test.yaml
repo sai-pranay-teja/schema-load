@@ -8,7 +8,7 @@ spec:
       image: pranayroot/test:3
       volumeMounts:
         - name: dummy
-          mountPath: /
+          mountPath: /dummy
   volumes:
     - name: dummy
       emptyDir:
