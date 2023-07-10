@@ -7,5 +7,5 @@ metadata:
 spec:
   containers:
     - name: schema-load
-      image: dokken/centos-8
+      image: test:1
       args: [ "mongo", "catalogue" ]
