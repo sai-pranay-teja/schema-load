@@ -5,6 +5,7 @@ metadata:
   labels:
     component: catalogue
 spec:
+  serviceAccountName: catalogue
   containers:
     - name: schema-load
       image: 581798224530.dkr.ecr.us-east-1.amazonaws.com/schema-load:1.0.1
