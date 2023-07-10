@@ -5,4 +5,4 @@ metadata:
 spec:
   containers:
     - name: schema-load
-      image: test:3
+      image: pranayroot/test:3
