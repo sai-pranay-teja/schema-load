@@ -6,3 +6,10 @@ spec:
   containers:
     - name: schema-load
       image: pranayroot/test:3
+      volumeMounts:
+        - name: dummy
+          mountPath: /
+  volumes:
+    - name: dummy
+      emptyDir:
+        sizeLimit: 500Mi
