@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
     - name: schema-load
-      image: pranayroot/test:3
+      image: pranayroot/test:4
       volumeMounts:
       - name: dummy
         mountPath: /dummy
