@@ -24,4 +24,4 @@
 # esac
 
 
-echo "success">/dummy/dummy.txt
+echo export "success">/dummy/dummy.txt
