@@ -12,4 +12,4 @@ spec:
   volumes:
   - name: dummy
     emptyDir:
-    sizeLimit: 500Mi
+      sizeLimit: 500Mi
